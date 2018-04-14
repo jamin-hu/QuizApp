@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <string name="september_verse">Do you remember, the 21st night of...</string>
+    <string name="september_answer_1">October</string>
+    <string name="september_answer_2">November</string>
+    <string name="september_answer_3">December</string>
+    <string name="september_answer_4">March</string>
+    <string name="september_answer_correct">September</string>
+
+    <string name="stayin_verse">Ah, ah, ah, ah...</string>
+    <string name="stayin_answer_1">shaving a fly</string>
+    <string name="stayin_answer_2">saving a life</string>
+    <string name="stayin_answer_3">saying a lie</string>
+    <string name="stayin_answer_4">ste-e-na-la</string>
+    <string name="stayin_answer_correct">staying alive</string>
+
+    <string name="submit">Submit</string>
+
+
+</resources>
