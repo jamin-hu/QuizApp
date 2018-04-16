@@ -4,12 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
     android:fillViewport="false">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     android:orientation="vertical">
 
     <TextView
@@ -18,54 +18,63 @@
         android:text="@string/quiz_title"
         android:paddingVertical="16dp"
         android:textSize="20sp"/>
-    <!-- Text entry question -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="First, Guess my name"/>
-    <EditText
-        android:id="@+id/name_Question"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="hint: Jamin Hu"/>
 
     <!-- Asking your song preferences -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Which songs do you like?"/>
+        android:text="Which songs are from the 70's or 80's?"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="September"
+        android:text="September - Earth Wind and Fire"
         android:onClick="onLikeSeptemberClicked"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stayin' Alive"
+        android:text="Stayin' Alive - Bee Gees"
         android:onClick="onLikeStayinClicked"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello"
+        android:text="Hello - Lionel Richie"
         android:onClick="onLikeHelloClicked"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Celebration"
+        android:text="Baby - Justin Bieber"
+        android:onClick="onLikeBabyClicked"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celebration - Kool and the Gang"
         android:onClick="onLikeCelebrationClicked"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Careless Whisper"
+        android:text="Careless Whisper - George Michael"
         android:onClick="onLikeCarelessClicked"/>
-    <CheckBox
+
+    <!-- Text entry question -->
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Baby"
-        android:onClick="onLikeBabyClicked"/>
+        android:layout_marginTop="8dp"
+        android:text="In what year was the oldest song from above released?"/>
+    <EditText
+        android:id="@+id/name_Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hint: ***1"/>
+
+    <!-- Complete the phrases of the songs-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="How do these songs go again?"
+        android:paddingVertical="16dp"
+        android:textSize="20sp"/>
 
     <TextView
         android:layout_width="wrap_content"

@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    // used to calculate point or no point for getting name right or not
-    int nameCorrect = 0;
+    // used to calculate point or no point for getting release date question right or not
+    int dateCorrect = 0;
 
     // Stores info on whether checkboxes in "favourite songs" questions are checked or not
     boolean likeSeptember = false;
@@ -191,10 +191,10 @@ public class MainActivity extends AppCompatActivity {
         EditText nameQuestion = (EditText) findViewById(R.id.name_Question);
         String nameAnswer = nameQuestion.getText().toString();
         if (nameAnswer.equals("Jamin Hu")) {
-            nameCorrect = 1;
+            dateCorrect = 1;
         }
         else {
-            nameCorrect = 0;
+            dateCorrect = 0;
         }
 
         // Calculates whether the "favourite songs" question was answered correctly
@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Calculates and shows the total score from all questions
-        int score = nameCorrect + favouritesCorrect + septemberAnswer + stayinAnswer + helloAnswer + celebrationAnswer + carelessAnswer;
+        int score = dateCorrect + favouritesCorrect + septemberAnswer + stayinAnswer + helloAnswer + celebrationAnswer + carelessAnswer;
         Toast.makeText(this, "You scored " + score + " out of 7", Toast.LENGTH_SHORT).show();
     }
 }
