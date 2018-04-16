@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="quiz_title">Do you have good musical taste?</string>
 
     <string name="september_verse">Do you remember, the 21st night of...</string>
     <string name="september_answer_1">October</string>
@@ -9,11 +10,32 @@
     <string name="september_answer_correct">September</string>
 
     <string name="stayin_verse">Ah, ah, ah, ah...</string>
-    <string name="stayin_answer_1">shaving a fly</string>
-    <string name="stayin_answer_2">saving a life</string>
-    <string name="stayin_answer_3">saying a lie</string>
-    <string name="stayin_answer_4">ste-e-na-la</string>
+    <string name="stayin_answer_1">ste-e-na-la</string>
+    <string name="stayin_answer_2">shaving a fly</string>
+    <string name="stayin_answer_3">saving a life</string>
+    <string name="stayin_answer_4">saying a lie</string>
     <string name="stayin_answer_correct">staying alive</string>
+
+    <string name="hello_verse">Hello...</string>
+    <string name="hello_answer_1">is it he you\'re cooking for</string>
+    <string name="hello_answer_2">is it tea you\'re brewing or...</string>
+    <string name="hello_answer_3">is indeed your metaphor</string>
+    <string name="hello_answer_4">from the other side</string>
+    <string name="hello_answer_correct">is it me you\'re looking for</string>
+
+    <string name="celebration_verse">Ceeelebrate good times come on,...</string>
+    <string name="celebration_answer_1">let\'s sell a bait now</string>
+    <string name="celebration_answer_2">let\'s hesitate now</string>
+    <string name="celebration_answer_3">let\'s meditate now</string>
+    <string name="celebration_answer_4">let\'s make a date now</string>
+    <string name="celebration_answer_correct">let\'s celebrate now</string>
+
+    <string name="careless_verse">I\'m never gon-</string>
+    <string name="careless_answer_1">na prance again</string>
+    <string name="careless_answer_2">na Dan\'s OK</string>
+    <string name="careless_answer_3">emancipate</string>
+    <string name="careless_answer_4">na give you up</string>
+    <string name="careless_answer_correct">na dance again</string>
 
     <string name="submit">Submit</string>
 

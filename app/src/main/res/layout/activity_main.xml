@@ -14,28 +14,28 @@
 
     <TextView
         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/quiz_title"
+        android:paddingVertical="16dp"
+        android:textSize="20sp"/>
+    <!-- Text entry question -->
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is your full name"/>
+        android:layout_marginTop="8dp"
+        android:text="First, Guess my name"/>
     <EditText
+        android:id="@+id/name_Question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type here"
-        android:inputType="textPersonName"/>
+        android:hint="hint: Jamin Hu"/>
 
+    <!-- Asking your song preferences -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Who is your daddy?"/>
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jamin"
-        android:onClick="onDaddyClick"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Which songs do you like"/>
+        android:layout_marginTop="8dp"
+        android:text="Which songs do you like?"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,20 +70,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/september_verse"/>
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <RadioButton android:id="@+id/september_answer_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/september_answer_1"
-            android:onClick="onSeptemberRadioClicked"/>
         <RadioButton android:id="@+id/september_answer_correct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/september_answer_correct"
+            android:onClick="onSeptemberRadioClicked"/>
+        <RadioButton android:id="@+id/september_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/september_answer_1"
             android:onClick="onSeptemberRadioClicked"/>
         <RadioButton android:id="@+id/september_answer_2"
             android:layout_width="wrap_content"
@@ -105,6 +106,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/stayin_verse"/>
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
@@ -114,32 +116,141 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/stayin_answer_1"
-            android:onClick="onStaynRadioClicked"/>
+            android:onClick="onStayinRadioClicked"/>
         <RadioButton android:id="@+id/stayin_answer_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/stayin_answer_2"
-            android:onClick="onStaynRadioClicked"/>
+            android:onClick="onStayinRadioClicked"/>
         <RadioButton android:id="@+id/stayin_answer_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/stayin_answer_3"
-            android:onClick="onStaynRadioClicked"/>
-        <RadioButton android:id="@+id/stayin_answer_correct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stayin_answer_correct"
-            android:onClick="onStaynRadioClicked"/>
+            android:onClick="onStayinRadioClicked"/>
         <RadioButton android:id="@+id/stayin_answer_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/stayin_answer_4"
-            android:onClick="onStaynRadioClicked"/>
+            android:onClick="onStayinRadioClicked"/>
+        <RadioButton android:id="@+id/stayin_answer_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stayin_answer_correct"
+            android:onClick="onStayinRadioClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/hello_verse"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/hello_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_answer_1"
+            android:onClick="onHelloRadioClicked"/>
+        <RadioButton android:id="@+id/hello_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_answer_2"
+            android:onClick="onHelloRadioClicked"/>
+        <RadioButton android:id="@+id/hello_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_answer_3"
+            android:onClick="onHelloRadioClicked"/>
+        <RadioButton android:id="@+id/hello_answer_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_answer_correct"
+            android:onClick="onHelloRadioClicked"/>
+        <RadioButton android:id="@+id/hello_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_answer_4"
+            android:onClick="onHelloRadioClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/celebration_verse"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/celebration_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/celebration_answer_1"
+            android:onClick="onCelebrationRadioClicked"/>
+        <RadioButton android:id="@+id/celebration_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/celebration_answer_2"
+            android:onClick="onCelebrationRadioClicked"/>
+        <RadioButton android:id="@+id/celebration_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/celebration_answer_3"
+            android:onClick="onCelebrationRadioClicked"/>
+        <RadioButton android:id="@+id/celebration_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/celebration_answer_4"
+            android:onClick="onCelebrationRadioClicked"/>
+        <RadioButton android:id="@+id/celebration_answer_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/celebration_answer_correct"
+            android:onClick="onCelebrationRadioClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/careless_verse"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/careless_answer_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/careless_answer_correct"
+            android:onClick="onCarelessRadioClicked"/>
+        <RadioButton android:id="@+id/careless_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/careless_answer_1"
+            android:onClick="onCarelessRadioClicked"/>
+        <RadioButton android:id="@+id/careless_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/careless_answer_2"
+            android:onClick="onCarelessRadioClicked"/>
+        <RadioButton android:id="@+id/careless_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/careless_answer_3"
+            android:onClick="onCarelessRadioClicked"/>
+        <RadioButton android:id="@+id/careless_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/careless_answer_4"
+            android:onClick="onCarelessRadioClicked"/>
     </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/submit"
         android:onClick="onSubmitClicked"/>
 
